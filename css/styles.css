@@ -125,7 +125,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .product-card {
@@ -163,7 +163,7 @@ nav {
 /* Calendar Section */
 .calendar-section {
   background: #f8f8f8;
-  padding: 80px 60px;
+  padding: 20px 60px 20px;
   border-top: 1px solid #e0e0e0;
 }
 
@@ -183,6 +183,28 @@ iframe {
   width: 100%;
   border: none;
   border-radius: 4px;
+}
+
+/* Info Sections */
+.info-section {
+  padding: 0 60px 20px;
+  background: #fafafa;
+}
+
+.contact-section {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.info-container {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-container p {
+  color: #555;
+  font-size: 1rem;
 }
 
 /* Footer */
@@ -217,8 +239,14 @@ footer {
   }
 
   .products-section,
-  .calendar-section {
+  .calendar-section,
+  .info-section {
     padding: 0 30px;
+  }
+
+  .info-section {
+    padding-top: 0;
+    padding-bottom: 40px;
   }
 
   .products-grid {
