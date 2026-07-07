@@ -268,6 +268,12 @@ footer {
     padding: 0 20px;
   }
 
+  .info-section#contact,
+  .info-section#about {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .info-section {
     padding-top: 0;
     padding-bottom: 40px;
