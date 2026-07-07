@@ -270,8 +270,12 @@ footer {
 
   .info-section#contact,
   .info-section#about {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0;
+  }
+
+  .info-section#contact .info-container,
+  .info-section#about .info-container {
+    padding: 0 20px 40px;
   }
 
   .info-section {
