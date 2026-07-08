@@ -199,7 +199,7 @@ nav {
   display: flex;
   width: max-content;
   gap: 0.35rem;
-  animation: scrollGallery 5s linear infinite;
+  animation: scrollGallery 12s linear infinite;
 }
 
 .product-card .gallery-track img {
@@ -217,7 +217,7 @@ nav {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
