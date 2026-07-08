@@ -231,6 +231,26 @@ iframe {
   font-size: 1rem;
 }
 
+#about .info-container {
+  text-align: left;
+  margin: 0 auto;
+}
+
+#about .section-title-row {
+  justify-content: center;
+  margin: 10px auto 0;
+}
+
+#about .section-title {
+  text-align: center;
+}
+
+#about .info-container p {
+  margin: 0 0 0.55rem;
+  line-height: 1.35;
+  font-size: 0.95rem;
+}
+
 /* Footer */
 footer {
   text-align: center;
