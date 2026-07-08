@@ -155,7 +155,7 @@ nav {
 .product-card {
   background: linear-gradient(135deg, #e8e8e8 0%, #d0d0d0 100%);
   border-radius: 8px;
-  padding: 40px 30px;
+  padding: 0;
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -163,6 +163,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .product-card:hover {
@@ -173,7 +174,8 @@ nav {
 .product-card h3 {
   font-size: 1.5rem;
   font-weight: 300;
-  margin-bottom: 15px;
+  margin: 0 0 0.25rem;
+  padding: 0 1rem 0.25rem;
   color: #222;
   letter-spacing: 0.5px;
 }
@@ -182,6 +184,41 @@ nav {
   font-size: 0.95rem;
   color: #555;
   font-weight: 300;
+  margin: 0;
+  padding: 0 1rem 0.5rem;
+}
+
+.product-card .image-gallery {
+  width: 100%;
+  margin-top: 0;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+}
+
+.product-card .gallery-track {
+  display: flex;
+  width: max-content;
+  gap: 0.35rem;
+  animation: scrollGallery 5s linear infinite;
+}
+
+.product-card .gallery-track img {
+  height: 320px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes scrollGallery {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* Calendar Section */
